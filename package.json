@@ -1,0 +1,29 @@
+{
+  "name": "compare-bakery.js",
+  "version": "1.0.0",
+  "description": "Compare Bakery.js and other mainstream JS API Server Framework",
+  "repository": "git@github.com:all-tasks/compare-bakery.js.git",
+  "license": "BSD-3-Clause",
+  "author": "<lane@wiseinfo.cc>",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "bakery": "bun ./bakery.js/index.js",
+    "koa": "bun ./koa.js/index.js",
+    "fastify": "node ./fastify.js/index.js",
+    "elysia": "bun ./elysia.js/index.js",
+    "test": "bun ./index.js"
+  },
+  "dependencies": {
+    "bakery.js": "https://github.com/all-tasks/bakery.js.git",
+    "benchmark": "^2.1.4",
+    "elysia": "^1.0.9",
+    "fastify": "^4.26.2",
+    "koa": "^2.15.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.2"
+  }
+}
