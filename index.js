@@ -23,7 +23,7 @@ async function makeRequest(url) {
 }
 
 // 执行并行请求测试
-async function concurrentRequests(url, count = 10) {
+async function concurrentRequests(url, count = 40) {
   const requests = Array.from({ length: count }, () => makeRequest(url));
   const results = await Promise.all(requests);
   return results.filter((result) => result).length;
